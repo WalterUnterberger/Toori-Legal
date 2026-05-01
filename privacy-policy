@@ -1,0 +1,145 @@
+# Privacy Policy for Toori
+
+**Last updated:** [Insert Date]
+
+**Developer:** Walter Unterberger
+**App Name:** Toori
+
+---
+
+## Introduction
+
+This Privacy Policy describes how the Toori application ("the App") collects, uses, and protects information when you use the App. The App is designed as an educational tool for learning Japanese kana and kanji. Your privacy and data security are taken seriously, and only the information necessary for providing the service is collected.
+
+By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.
+
+---
+
+## Information We Collect
+
+The App may collect the following types of information:
+
+### 1. Account Information
+
+When you create an account or log in, the following information may be collected:
+
+* Email address
+* Authentication credentials managed by Firebase Authentication
+
+Passwords are not stored directly by the App. Authentication is handled securely through Firebase services.
+
+### 2. Usage and Progress Data
+
+The App stores learning-related information necessary to provide its functionality, including:
+
+* Learning progress
+* Statistics (e.g., session counts, performance data)
+* App usage timestamps
+
+This data is used solely to support the learning experience.
+
+### 3. Technical Information
+
+The App may automatically collect limited technical information required for operation and reliability, such as:
+
+* Device type and operating system version
+* App version
+* Crash or diagnostic information (if crash reporting services are enabled)
+
+---
+
+## How We Use Information
+
+Information collected by the App is used only for the following purposes:
+
+* To provide and maintain app functionality
+* To authenticate users and manage accounts
+* To store and display learning progress
+* To improve performance and reliability
+* To diagnose technical issues
+
+The App does not use personal data for advertising or marketing purposes.
+
+---
+
+## Data Storage and Security
+
+User data is stored securely using Firebase and local device storage technologies.
+
+Security measures include:
+
+* Encrypted network communication (HTTPS)
+* Secure authentication mechanisms
+* Controlled access to stored data
+
+Reasonable technical and organizational safeguards are implemented to protect user information from unauthorized access, loss, misuse, or disclosure.
+
+---
+
+## Data Sharing
+
+The App does not sell, rent, or trade personal information.
+
+Information may be processed by trusted service providers strictly for the purpose of operating the App, including:
+
+* Firebase (authentication and backend services)
+
+These services operate under their own privacy and security obligations.
+
+Data may also be disclosed if required by law or to comply with legal obligations.
+
+---
+
+## Data Retention
+
+User data is retained only as long as necessary to provide the App's functionality or to comply with legal obligations.
+
+Users may request deletion of their account and associated data at any time.
+
+---
+
+## User Rights
+
+Depending on applicable laws, users may have the right to:
+
+* Access their personal data
+* Request correction of inaccurate data
+* Request deletion of their data
+* Withdraw consent for data processing
+
+Requests can be made using the contact information below.
+
+---
+
+## Children's Privacy
+
+The App is intended for general audiences and educational use. The App does not knowingly collect personal information from children without appropriate parental consent where required by applicable law.
+
+---
+
+## Third-Party Services
+
+The App uses the following third-party service:
+
+* Firebase (Google LLC)
+
+Firebase may collect and process data in accordance with its own privacy policy. More information can be found here:
+
+[https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
+
+---
+
+## Changes to This Privacy Policy
+
+This Privacy Policy may be updated from time to time. Changes will be reflected by updating the "Last updated" date at the top of this document.
+
+Users are encouraged to review this Privacy Policy periodically.
+
+---
+
+## Contact Information
+
+If you have questions about this Privacy Policy or wish to request data deletion, please contact:
+
+**Developer:** Walter Unterberger
+**Email:** [Insert Contact Email]
