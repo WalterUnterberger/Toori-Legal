@@ -12,20 +12,57 @@
             padding: 20px;
             line-height: 1.7;
             color: #222;
+            background-color: #fff;
         }
 
         h1, h2 {
             color: #111;
         }
 
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            margin-bottom: 32px;
+            color: #555;
+        }
+
         .section {
             margin-bottom: 32px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
 
     <h1>Delete Your Toori Account</h1>
+
+    <div class="meta">
+        <p><strong>Last updated:</strong> May 14, 2026</p>
+        <p><strong>App name:</strong> Toori</p>
+        <p><strong>Developer:</strong> Walter Unterberger</p>
+    </div>
 
     <div class="section">
         <h2>Delete Directly in the App</h2>
@@ -41,13 +78,25 @@
     </div>
 
     <div class="section">
-        <h2>Data That Will Be Deleted</h2>
+        <h2>What Will Be Deleted</h2>
+        <p>
+            When you delete your Toori account, the following account-associated data will be deleted:
+        </p>
         <ul>
             <li>User authentication account</li>
             <li>Registered email address</li>
             <li>User profile information</li>
-            <li>Synced educational progress data</li>
+            <li>Firebase user identifier associated with the account</li>
+            <li>Synced educational progress data associated with the account</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <h2>Locally Stored Data</h2>
+        <p>
+            Some learning data may be stored locally on your device. Removing the App from your device may
+            also remove locally stored app data, depending on your device and operating system settings.
+        </p>
     </div>
 
     <div class="section">
@@ -56,7 +105,13 @@
             If you cannot access the application, you may request deletion by email:
         </p>
         <p>
-            <strong>w.unterberger.dev@gmail.com</strong>
+            <strong>
+                <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
+            </strong>
+        </p>
+        <p>
+            Please include the email address associated with your Toori account so the request can be
+            identified and processed.
         </p>
     </div>
 
@@ -66,6 +121,31 @@
             Deletion requests are typically processed within 7 business days.
         </p>
     </div>
+
+    <div class="section">
+        <h2>Operator Information</h2>
+        <p>
+            Toori is operated by:
+        </p>
+        <p>
+            <strong>Walter Unterberger</strong><br>
+            Email: <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Privacy Policy</h2>
+        <p>
+            You can read the full Toori Privacy Policy here:
+            <a href="index.html">Toori Privacy Policy</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>
+            Toori is operated by Walter Unterberger.
+        </p>
+    </footer>
 
 </body>
 </html>
