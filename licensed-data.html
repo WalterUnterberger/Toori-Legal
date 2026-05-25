@@ -5,88 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toori Licensed Data</title>
     <style>
+        :root {
+            --text: #1f1f1f;
+            --muted: #5f6368;
+            --background: #ffffff;
+            --surface: #f7f7f8;
+            --border: #dddddd;
+            --primary: #005fcc;
+            --primary-hover: #004a99;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 20px;
             line-height: 1.7;
-            color: #222;
-            background-color: #fff;
+            color: var(--text);
+            background-color: var(--background);
         }
 
         h1, h2, h3 {
-            color: #111;
+            color: var(--text);
+            line-height: 1.25;
         }
 
         h1 {
+            font-size: 2.2rem;
             margin-bottom: 8px;
         }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
+        h2 {
+            margin-top: 32px;
+            font-size: 1.5rem;
         }
 
-        a:hover {
-            text-decoration: underline;
+        h3 {
+            margin-top: 24px;
+            font-size: 1.15rem;
         }
 
-        .meta {
-            margin-bottom: 32px;
-            color: #555;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .dataset-box {
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 16px;
-            background-color: #f8f8f8;
+        p {
+            margin: 0 0 16px;
         }
 
         ul {
             padding-left: 24px;
         }
 
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--primary-hover);
+        }
+
+        a:focus {
+            outline: 3px solid rgba(0, 95, 204, 0.35);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .meta {
+            color: var(--muted);
+            margin-top: 12px;
+            margin-bottom: 32px;
+        }
+
+        .meta p {
+            margin-bottom: 4px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            background-color: var(--background);
+        }
+
+        .dataset-box {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0 28px;
+            background-color: var(--surface);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .download-link {
+            display: inline-block;
+            margin-top: 4px;
+            font-weight: 700;
+        }
+
         footer {
             margin-top: 48px;
             padding-top: 24px;
-            border-top: 1px solid #ddd;
-            color: #555;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
             font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .dataset-box {
+                padding: 18px;
+            }
         }
     </style>
 </head>
 <body>
 
-<h1>Toori Licensed Data</h1>
+<a class="back-link" href="index.html">← Back to Legal Information</a>
 
-<div class="meta">
-    <p><strong>Last updated:</strong> May 25, 2026</p>
-    <p><strong>App name:</strong> Toori</p>
-    <p><strong>Developer:</strong> Walter Unterberger</p>
-</div>
+<header>
+    <h1>Toori Licensed Data</h1>
 
-<div class="section">
+    <div class="meta">
+        <p><strong>Last updated:</strong> May 25, 2026</p>
+        <p><strong>App name:</strong> Toori</p>
+        <p><strong>Developer:</strong> Walter Unterberger</p>
+    </div>
+</header>
+
+<main class="card">
+
+    <h2>Overview</h2>
     <p>
         This page documents externally licensed datasets used by Toori and provides
         attribution, licensing details, and access where required.
     </p>
-</div>
+    <p>
+        Some Japanese language data used in Toori may be derived from third-party datasets.
+        Such data remains subject to the license terms of the original providers.
+    </p>
 
-<div class="section">
     <h2>JMdict / JMdictDB</h2>
 
-    <div class="dataset-box">
+    <section class="dataset-box" aria-labelledby="jmdict-title">
+        <h3 id="jmdict-title">Japanese Dictionary Data</h3>
+
         <p>
-            Japanese dictionary data used in Toori may be derived from
-            <strong>JMdict</strong>, provided by the
-            <strong>Electronic Dictionary Research and Development Group (EDRDG)</strong>.
+            Japanese dictionary data used in Toori may be derived from <strong>JMdict</strong>,
+            provided by the <strong>Electronic Dictionary Research and Development Group (EDRDG)</strong>.
         </p>
 
         <ul>
@@ -98,42 +187,36 @@
         <p>
             Original source:
             <a href="https://www.edrdg.org/" target="_blank" rel="noopener noreferrer">
-                https://www.edrdg.org/
+                EDRDG
             </a>
         </p>
 
         <p>
             License details:
             <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener noreferrer">
-                https://www.edrdg.org/edrdg/licence.html
+                EDRDG License Page
             </a>
         </p>
 
         <p>
-            Data used in Toori may have been:
+            Data used in Toori may have been parsed, filtered, normalized, restructured,
+            or converted into SQLite database format for application use.
         </p>
-
-        <ul>
-            <li>parsed from source format</li>
-            <li>filtered</li>
-            <li>normalized</li>
-            <li>restructured</li>
-            <li>converted into SQLite database format</li>
-        </ul>
 
         <p>
             Public adapted dataset:
-            <a href="datasets/jmdict_dictionary.db">
+            <br>
+            <a class="download-link" href="datasets/jmdict_dictionary.db">
                 Download Toori JMdict-derived dictionary database
             </a>
         </p>
-    </div>
-</div>
+    </section>
 
-<div class="section">
     <h2>KANJIDIC2 / KRADFILE / RADKFILE</h2>
 
-    <div class="dataset-box">
+    <section class="dataset-box" aria-labelledby="kanji-data-title">
+        <h3 id="kanji-data-title">Kanji and Radical Data</h3>
+
         <p>
             Toori may also use kanji and radical data provided by the
             <strong>Electronic Dictionary Research and Development Group (EDRDG)</strong>.
@@ -147,16 +230,23 @@
         <p>
             License details:
             <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener noreferrer">
-                https://www.edrdg.org/edrdg/licence.html
+                EDRDG License Page
             </a>
         </p>
-    </div>
-</div>
+    </section>
+
+    <h2>Related Information</h2>
+
+    <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="account-deletion.html">Account Deletion</a></li>
+        <li><a href="index.html">Legal Information Overview</a></li>
+    </ul>
+
+</main>
 
 <footer>
-    <p>
-        Toori is operated by Walter Unterberger.
-    </p>
+    <p>Toori is operated by Walter Unterberger.</p>
 </footer>
 
 </body>
