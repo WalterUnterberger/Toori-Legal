@@ -1,10 +1,10 @@
-# Toori — Privacy Policy
+# Toori — Legal & Compliance Information
 
-This repository hosts the official **Privacy Policy** for the **Toori** mobile application.
+This repository hosts the official public legal, privacy, account management, and licensed data information for the **Toori** mobile application.
 
-**Toori** is an educational Android application designed to support the learning of Japanese. The Privacy Policy explains how user information is collected, used, stored, and protected when using the application.
+**Toori** is an educational Android application designed to support Japanese language learning.
 
-This repository exists solely to provide a publicly accessible privacy policy required for distribution of the app through the Google Play Store and to ensure transparency regarding data handling practices.
+This repository exists to provide transparent public access to legal and compliance documentation required for app distribution, user transparency, and third-party license obligations.
 
 ---
 
@@ -13,48 +13,45 @@ This repository exists solely to provide a publicly accessible privacy policy re
 This repository was created to:
 
 * Provide a publicly accessible Privacy Policy
+* Provide Google Play compliant account deletion information
+* Document third-party licensed datasets and attribution obligations
+* Provide access to externally licensed data where required
 * Comply with Google Play Developer Program requirements
-* Inform users about data collection and privacy practices
-* Maintain transparency and regulatory compliance
+* Maintain transparency regarding privacy, data handling, and licensing
 
 ---
 
-## 📖 About the App
+## 📖 About Toori
 
-**Toori** is a learning application focused on:
+**Toori** is a Japanese language learning application focused on:
 
-* Japanese kana and kanji training
-* Progress tracking and learning statistics
+* Kana learning (Hiragana / Katakana)
+* Kanji study
+* Vocabulary learning
+* Learning progress tracking
 * Educational content delivery
+* Dictionary and language reference functionality
 
-The app is intended for general audiences and educational use.
-
----
-
-## 🔒 Scope of This Repository
-
-This repository:
-
-* Contains only the Privacy Policy document
-* Does **not** contain application source code
-* Exists exclusively for compliance and transparency purposes
-
-All application code is maintained in a separate private repository.
+The application is intended for educational use and general audiences.
 
 ---
 
-## 📬 Contact
+## 📂 Repository Contents
 
-If you have questions regarding the Privacy Policy or data handling practices, please contact:
+This repository may contain:
 
-**Developer:** Walter Unterberger
-**Email:** w.unterberger.dev@gmail.com
+* Privacy Policy documentation
+* Account deletion instructions
+* Legal and compliance notices
+* Third-party attribution information
+* Licensing disclosures
+* Publicly accessible externally licensed datasets where required
 
----
+Example areas include:
 
-## ⚖️ Compliance
-
-This Privacy Policy is provided to comply with requirements of:
-
-* Google Play Developer Program Policies
-* Applicable data protection and privacy regulations
+```text
+Privacy Policy
+Account Deletion
+Licensed Data
+Third-Party Attribution
+Open Dataset Downloads
