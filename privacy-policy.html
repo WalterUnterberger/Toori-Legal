@@ -1,148 +1,307 @@
-# Privacy Policy for Toori
-
-**Last updated:** 01/05/2026
-
-**Developer:** Walter Unterberger
-**App Name:** Toori
-
----
-
-## Introduction
-
-This Privacy Policy describes how the Toori application ("the App") collects, uses, and protects information when you use the App.
-The App is designed as an educational tool for learning Japanese.
-Your privacy and data security are taken seriously, and only the information necessary for providing the service is collected.
-
-By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.
-
----
-
-## Information We Collect
-
-The App may collect the following types of information:
-
-### 1. Account Information
-
-When you create an account or log in, the following information may be collected:
-
-* Email address
-* Authentication credentials managed by Firebase Authentication
-
-Passwords are not stored directly by the App. Authentication is handled securely through Firebase services.
-
-### 2. Usage and Progress Data
-
-The App stores learning-related information necessary to provide its functionality, including:
-
-* Learning progress
-* Statistics (e.g., session counts, performance data)
-* App usage timestamps
-
-This data is used solely to support the learning experience.
-
-### 3. Technical Information
-
-The App may automatically collect limited technical information required for operation and reliability, such as:
-
-* Device type and operating system version
-* App version
-* Crash or diagnostic information (if crash reporting services are enabled)
-
----
-
-## How We Use Information
-
-Information collected by the App is used only for the following purposes:
-
-* To provide and maintain app functionality
-* To authenticate users and manage accounts
-* To store and display learning progress
-* To improve performance and reliability
-* To diagnose technical issues
-
-The App does not use personal data for advertising or marketing purposes.
-
----
-
-## Data Storage and Security
-
-User data is stored securely using Firebase and local device storage technologies.
-
-Security measures include:
-
-* Encrypted network communication (HTTPS)
-* Secure authentication mechanisms
-* Controlled access to stored data
-
-Reasonable technical and organizational safeguards are implemented to protect user information from unauthorized access, loss, misuse, or disclosure.
-
----
-
-## Data Sharing
-
-The App does not sell, rent, or trade personal information.
-
-Information may be processed by trusted service providers strictly for the purpose of operating the App, including:
-
-* Firebase (authentication and backend services)
-
-These services operate under their own privacy and security obligations.
-
-Data may also be disclosed if required by law or to comply with legal obligations.
-
----
-
-## Data Retention
-
-User data is retained only as long as necessary to provide the App's functionality or to comply with legal obligations.
-
-Users may request deletion of their account and associated data at any time.
-
----
-
-## User Rights
-
-Depending on applicable laws, users may have the right to:
-
-* Access their personal data
-* Request correction of inaccurate data
-* Request deletion of their data
-* Withdraw consent for data processing
-
-Requests can be made using the contact information below.
-
----
-
-## Children's Privacy
-
-The App is intended for general audiences and educational use.
-The App does not knowingly collect personal information from children without appropriate parental consent where required by applicable law.
-
----
-
-## Third-Party Services
-
-The App uses the following third-party service:
-
-* Firebase (Google LLC)
-
-Firebase may collect and process data in accordance with its own privacy policy. More information can be found here:
-
-[https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
-
----
-
-## Changes to This Privacy Policy
-
-This Privacy Policy may be updated from time to time. Changes will be reflected by updating the "Last updated" date at the top of this document.
-
-Users are encouraged to review this Privacy Policy periodically.
-
----
-
-## Contact Information
-
-If you have questions about this Privacy Policy or wish to request data deletion, please contact:
-
-**Developer:** Walter Unterberger
-**Email:**  w.unterberger.dev@gmail.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toori Privacy Policy</title>
+    <style>
+        :root {
+            --text: #1f1f1f;
+            --muted: #5f6368;
+            --background: #ffffff;
+            --surface: #f7f7f8;
+            --border: #dddddd;
+            --primary: #005fcc;
+            --primary-hover: #004a99;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        h1, h2, h3 {
+            color: var(--text);
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            margin-top: 32px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            margin-top: 24px;
+            font-size: 1.15rem;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--primary-hover);
+        }
+
+        a:focus {
+            outline: 3px solid rgba(0, 95, 204, 0.35);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .meta {
+            color: var(--muted);
+            margin-top: 12px;
+            margin-bottom: 32px;
+        }
+
+        .meta p {
+            margin-bottom: 4px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            background-color: var(--background);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a class="back-link" href="index.html">← Back to Legal Information</a>
+
+<header>
+    <h1>Privacy Policy for Toori</h1>
+
+    <div class="meta">
+        <p><strong>Last updated:</strong> May 25, 2026</p>
+        <p><strong>Developer:</strong> Walter Unterberger</p>
+        <p><strong>App name:</strong> Toori</p>
+    </div>
+</header>
+
+<main class="card">
+    <h2>Introduction</h2>
+    <p>
+        This Privacy Policy describes how the Toori application ("the App") collects, uses,
+        and protects information when you use the App.
+    </p>
+    <p>
+        Toori is an educational application designed to support Japanese language learning.
+        Your privacy and data security are taken seriously, and only information necessary
+        to provide the service is collected.
+    </p>
+    <p>
+        By using the App, you agree to the collection and use of information in accordance
+        with this Privacy Policy.
+    </p>
+
+    <h2>Information We Collect</h2>
+
+    <h3>1. Account Information</h3>
+    <p>
+        When you create an account or log in, the following information may be collected:
+    </p>
+    <ul>
+        <li>Email address</li>
+        <li>Authentication credentials managed by Firebase Authentication</li>
+    </ul>
+    <p>
+        Passwords are not stored directly by the App. Authentication is handled securely
+        through Firebase services.
+    </p>
+
+    <h3>2. Usage and Progress Data</h3>
+    <p>
+        The App stores learning-related information necessary to provide its functionality,
+        including:
+    </p>
+    <ul>
+        <li>Learning progress</li>
+        <li>Statistics (such as session counts and performance data)</li>
+        <li>App usage timestamps</li>
+    </ul>
+    <p>
+        This data is used solely to support the learning experience.
+    </p>
+
+    <h3>3. Technical Information</h3>
+    <p>
+        The App may automatically collect limited technical information required for operation
+        and reliability, including:
+    </p>
+    <ul>
+        <li>Device type</li>
+        <li>Operating system version</li>
+        <li>App version</li>
+        <li>Crash or diagnostic information, if diagnostic services are enabled</li>
+    </ul>
+
+    <h2>How We Use Information</h2>
+    <p>
+        Information collected by the App is used only for the following purposes:
+    </p>
+    <ul>
+        <li>To provide and maintain app functionality</li>
+        <li>To authenticate users and manage accounts</li>
+        <li>To store and display learning progress</li>
+        <li>To improve performance and reliability</li>
+        <li>To diagnose technical issues</li>
+    </ul>
+    <p>
+        The App does not use personal data for advertising or marketing purposes.
+    </p>
+
+    <h2>Data Storage and Security</h2>
+    <p>
+        User data is stored securely using Firebase services and local device storage technologies.
+    </p>
+    <p>
+        Security measures include:
+    </p>
+    <ul>
+        <li>Encrypted network communication (HTTPS)</li>
+        <li>Secure authentication mechanisms</li>
+        <li>Controlled access to stored data</li>
+    </ul>
+    <p>
+        Reasonable technical and organizational safeguards are implemented to protect user
+        information from unauthorized access, loss, misuse, or disclosure.
+    </p>
+
+    <h2>Data Sharing</h2>
+    <p>
+        The App does not sell, rent, or trade personal information.
+    </p>
+    <p>
+        Information may be processed by trusted service providers strictly for operating the App,
+        including:
+    </p>
+    <ul>
+        <li>Firebase (authentication and backend services)</li>
+    </ul>
+    <p>
+        These services operate under their own privacy and security obligations.
+    </p>
+    <p>
+        Data may also be disclosed where required by law.
+    </p>
+
+    <h2>Data Retention</h2>
+    <p>
+        User data is retained only as long as necessary to provide app functionality
+        or comply with legal obligations.
+    </p>
+    <p>
+        Users may request deletion of their account and associated data at any time.
+    </p>
+
+    <h2>User Rights</h2>
+    <p>
+        Depending on applicable laws, users may have the right to:
+    </p>
+    <ul>
+        <li>Access personal data</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of data</li>
+        <li>Withdraw consent where applicable</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>
+        The App is intended for general audiences and educational use.
+        It does not knowingly collect personal information from children without appropriate
+        parental consent where required by law.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+        Toori uses Firebase services provided by Google LLC.
+    </p>
+    <p>
+        Firebase privacy information:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+            Firebase Privacy and Security
+        </a>
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>
+        This Privacy Policy may be updated from time to time.
+        Changes will be reflected by updating the "Last updated" date.
+    </p>
+
+    <h2>Contact Information</h2>
+    <p>
+        If you have questions about this Privacy Policy or wish to request data deletion:
+    </p>
+    <p>
+        <strong>Walter Unterberger</strong><br>
+        <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
+    </p>
+</main>
+
+<footer>
+    <p>Toori is operated by Walter Unterberger.</p>
+</footer>
+
+</body>
+</html>
