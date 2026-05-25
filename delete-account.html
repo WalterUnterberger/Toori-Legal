@@ -5,147 +5,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toori Account Deletion</title>
     <style>
+        :root {
+            --text: #1f1f1f;
+            --muted: #5f6368;
+            --background: #ffffff;
+            --surface: #f7f7f8;
+            --border: #dddddd;
+            --primary: #005fcc;
+            --primary-hover: #004a99;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 20px;
             line-height: 1.7;
-            color: #222;
-            background-color: #fff;
+            color: var(--text);
+            background-color: var(--background);
         }
 
         h1, h2 {
-            color: #111;
+            color: var(--text);
+            line-height: 1.25;
         }
 
         h1 {
+            font-size: 2.2rem;
             margin-bottom: 8px;
         }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
+        h2 {
+            margin-top: 32px;
+            font-size: 1.5rem;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .meta {
-            margin-bottom: 32px;
-            color: #555;
-        }
-
-        .section {
-            margin-bottom: 32px;
+        p {
+            margin: 0 0 16px;
         }
 
         ul {
             padding-left: 24px;
         }
 
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--primary-hover);
+        }
+
+        a:focus {
+            outline: 3px solid rgba(0, 95, 204, 0.35);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .meta {
+            color: var(--muted);
+            margin-top: 12px;
+            margin-bottom: 32px;
+        }
+
+        .meta p {
+            margin-bottom: 4px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            background-color: var(--background);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            padding: 18px;
+            margin: 20px 0;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background-color: var(--surface);
+        }
+
         footer {
             margin-top: 48px;
             padding-top: 24px;
-            border-top: 1px solid #ddd;
-            color: #555;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
             font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
+<a class="back-link" href="index.html">← Back to Legal Information</a>
+
+<header>
     <h1>Delete Your Toori Account</h1>
 
     <div class="meta">
-        <p><strong>Last updated:</strong> May 14, 2026</p>
+        <p><strong>Last updated:</strong> May 25, 2026</p>
         <p><strong>App name:</strong> Toori</p>
         <p><strong>Developer:</strong> Walter Unterberger</p>
     </div>
+</header>
 
-    <div class="section">
-        <h2>Delete Directly in the App</h2>
-        <p>
-            Toori users can delete their account directly inside the application.
-        </p>
-        <p>
-            Navigate to:
-        </p>
-        <p>
-            <strong>Profile → Delete Account</strong>
-        </p>
+<main class="card">
+
+    <h2>Delete Directly in the App</h2>
+
+    <p>
+        Toori users can delete their account directly within the application.
+    </p>
+
+    <div class="highlight-box">
+        <strong>Profile → Settings → Delete Account</strong>
     </div>
 
-    <div class="section">
-        <h2>What Will Be Deleted</h2>
-        <p>
-            When you delete your Toori account, the following account-associated data will be deleted:
-        </p>
-        <ul>
-            <li>User authentication account</li>
-            <li>Registered email address</li>
-            <li>User profile information</li>
-            <li>Firebase user identifier associated with the account</li>
-            <li>Synced educational progress data associated with the account</li>
-        </ul>
+    <p>
+        This is the fastest and recommended method for account deletion.
+    </p>
+
+    <h2>What Will Be Deleted</h2>
+
+    <p>
+        When your Toori account is deleted, the following account-associated data will be removed:
+    </p>
+
+    <ul>
+        <li>User authentication account</li>
+        <li>Registered email address</li>
+        <li>User profile information</li>
+        <li>Firebase user identifier associated with the account</li>
+        <li>Synced learning progress associated with the account</li>
+    </ul>
+
+    <h2>Locally Stored Data</h2>
+
+    <p>
+        Some learning-related data may also be stored locally on your device.
+    </p>
+
+    <p>
+        Removing the Toori application from your device may also remove locally stored app data,
+        depending on your device settings and Android system behavior.
+    </p>
+
+    <h2>Alternative Deletion Request</h2>
+
+    <p>
+        If you cannot access the application, you may request account deletion manually by email.
+    </p>
+
+    <div class="highlight-box">
+        <strong>
+            <a href="mailto:w.unterberger.dev@gmail.com">
+                w.unterberger.dev@gmail.com
+            </a>
+        </strong>
     </div>
 
-    <div class="section">
-        <h2>Locally Stored Data</h2>
-        <p>
-            Some learning data may be stored locally on your device. Removing the App from your device may
-            also remove locally stored app data, depending on your device and operating system settings.
-        </p>
-    </div>
+    <p>
+        Please include the email address associated with your Toori account so the request
+        can be identified and processed correctly.
+    </p>
 
-    <div class="section">
-        <h2>Alternative Deletion Request</h2>
-        <p>
-            If you cannot access the application, you may request deletion by email:
-        </p>
-        <p>
-            <strong>
-                <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
-            </strong>
-        </p>
-        <p>
-            Please include the email address associated with your Toori account so the request can be
-            identified and processed.
-        </p>
-    </div>
+    <h2>Processing Time</h2>
 
-    <div class="section">
-        <h2>Processing Time</h2>
-        <p>
-            Deletion requests are typically processed within 7 business days.
-        </p>
-    </div>
+    <p>
+        Manual deletion requests are typically processed within <strong>7 business days</strong>.
+    </p>
 
-    <div class="section">
-        <h2>Operator Information</h2>
-        <p>
-            Toori is operated by:
-        </p>
-        <p>
-            <strong>Walter Unterberger</strong><br>
-            Email: <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
-        </p>
-    </div>
+    <h2>Operator Information</h2>
 
-    <div class="section">
-        <h2>Privacy Policy</h2>
-        <p>
-            You can read the full Toori Privacy Policy here:
-            <a href="index.html">Toori Privacy Policy</a>
-        </p>
-    </div>
+    <p>
+        Toori is operated by:
+    </p>
 
-    <footer>
-        <p>
-            Toori is operated by Walter Unterberger.
-        </p>
-    </footer>
+    <p>
+        <strong>Walter Unterberger</strong><br>
+        <a href="mailto:w.unterberger.dev@gmail.com">w.unterberger.dev@gmail.com</a>
+    </p>
+
+    <h2>Related Information</h2>
+
+    <p>
+        Additional legal and privacy information:
+    </p>
+
+    <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="licensed-data.html">Licensed Data</a></li>
+        <li><a href="index.html">Legal Information Overview</a></li>
+    </ul>
+
+</main>
+
+<footer>
+    <p>Toori is operated by Walter Unterberger.</p>
+</footer>
 
 </body>
 </html>
