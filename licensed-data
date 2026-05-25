@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toori Licensed Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #222;
+            background-color: #fff;
+        }
+
+        h1, h2, h3 {
+            color: #111;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            margin-bottom: 32px;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .dataset-box {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 16px;
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Toori Licensed Data</h1>
+
+<div class="meta">
+    <p><strong>Last updated:</strong> May 25, 2026</p>
+    <p><strong>App name:</strong> Toori</p>
+    <p><strong>Developer:</strong> Walter Unterberger</p>
+</div>
+
+<div class="section">
+    <p>
+        This page documents externally licensed datasets used by Toori and provides
+        attribution, licensing details, and access where required.
+    </p>
+</div>
+
+<div class="section">
+    <h2>JMdict / JMdictDB</h2>
+
+    <div class="dataset-box">
+        <p>
+            Japanese dictionary data used in Toori may be derived from
+            <strong>JMdict</strong>, provided by the
+            <strong>Electronic Dictionary Research and Development Group (EDRDG)</strong>.
+        </p>
+
+        <ul>
+            <li><strong>Dataset:</strong> JMdict / JMdictDB</li>
+            <li><strong>Provider:</strong> Electronic Dictionary Research and Development Group</li>
+            <li><strong>License:</strong> Creative Commons Attribution-ShareAlike 4.0 International</li>
+        </ul>
+
+        <p>
+            Original source:
+            <a href="https://www.edrdg.org/" target="_blank" rel="noopener noreferrer">
+                https://www.edrdg.org/
+            </a>
+        </p>
+
+        <p>
+            License details:
+            <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener noreferrer">
+                https://www.edrdg.org/edrdg/licence.html
+            </a>
+        </p>
+
+        <p>
+            Data used in Toori may have been:
+        </p>
+
+        <ul>
+            <li>parsed from source format</li>
+            <li>filtered</li>
+            <li>normalized</li>
+            <li>restructured</li>
+            <li>converted into SQLite database format</li>
+        </ul>
+
+        <p>
+            Public adapted dataset:
+            <a href="datasets/jmdict_dictionary.db">
+                Download Toori JMdict-derived dictionary database
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>KANJIDIC2 / KRADFILE / RADKFILE</h2>
+
+    <div class="dataset-box">
+        <p>
+            Toori may also use kanji and radical data provided by the
+            <strong>Electronic Dictionary Research and Development Group (EDRDG)</strong>.
+        </p>
+
+        <ul>
+            <li><strong>Datasets:</strong> KANJIDIC2 / KRADFILE / RADKFILE</li>
+            <li><strong>License:</strong> Creative Commons Attribution-ShareAlike 4.0 International</li>
+        </ul>
+
+        <p>
+            License details:
+            <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener noreferrer">
+                https://www.edrdg.org/edrdg/licence.html
+            </a>
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>
+        Toori is operated by Walter Unterberger.
+    </p>
+</footer>
+
+</body>
+</html>
